@@ -1,18 +1,18 @@
 require 'formula'
 
-VERSION="0.7.6"
+VERSION="0.8"
 
 class Cow < Formula
   homepage 'http://github.com/cyfdecyf/cow/'
   url "http://dl.chenyufei.info/cow/cow-mac64-#{VERSION}.gz"
-  sha1 'b048275c10fc89b6a0884116aab73e4dbe70cab2'
+  sha1 '7891371ca7cc8904d43339e02c618cfd1ba2c091'
 
   def install
     FileUtils.mv "cow-mac64-#{VERSION}", "cow"
     bin.install "cow"
 
     docbase = 'https://github.com/cyfdecyf/cow/raw/master/doc'
-    system "curl -s -L #{docbase}/sample-config/rc -o #{prefix}/rc"
+    system "curl -L #{docbase}/sample-config/rc -o #{prefix}/rc"
   end
 
   def caveats; <<-EOS.undent
