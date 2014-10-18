@@ -39,10 +39,7 @@ class Cow < Formula
             <string>#{opt_prefix}/bin/cow</string>
         </array>
         <key>KeepAlive</key>
-        <dict>
-          <key>NetworkState</key>
-          <true/>
-        </dict>
+        <true/>
       </dict>
     </plist>
     EOS
