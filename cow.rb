@@ -1,11 +1,11 @@
 require 'formula'
 
-VERSION="0.9.1"
+VERSION="0.9.4"
 
 class Cow < Formula
   homepage 'http://github.com/cyfdecyf/cow/'
   url "http://dl.chenyufei.info/cow/cow-mac64-#{VERSION}.gz"
-  sha1 'fe10a2c68ff9f39e71ae98ac8ec9ab74913ddd33'
+  sha1 'd92ec10cfbbb48845440ae32b666e462ca9d847b'
 
   def install
     FileUtils.mv "cow-mac64-#{VERSION}", "cow"
